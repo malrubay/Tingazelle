@@ -8,7 +8,7 @@ body {
   color:white;
 }
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 h1{
   font-family: 'Montserrat', sans-serif;
@@ -49,6 +49,9 @@ padding:0 0 4.5rem ;
 .dog-image {
   width: 60%;
   transform:rotate(25deg);
+  position: absolute;
+  right: 30%;
+
 }
 
 /* Download Buttons */
@@ -59,6 +62,9 @@ padding:0 0 4.5rem ;
 /* Features Section */
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
@@ -85,7 +91,7 @@ color:white;
 }
 
 .testimonial-image {
-  width:10%;
+  width:20%;
   border-radius: 100%;
   margin: 20px;
 
@@ -103,4 +109,45 @@ color:white;
 
 .carousel-item{
   padding:7% 15%;
+}
+
+/* Pricing Section */
+#pricing {
+  text-align: center;
+  padding:100px;
+}
+.pricing-column{
+  padding: 3% 2%;
+}
+
+@media (max-width: 1000px) {
+  .dog-image {
+    position: static;
+    transform: rotate(0);
+  }
+  #title {
+    text-align: center;
+  }
+}
+
+#cta {
+  background-color: #ff4c68;
+  color:#fff;
+  padding: 7% 15%;
+  text-align: center;;
+}
+.cta-heading {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  line-height: 1.5;
+  font-size: 3.5rem;
+
+}
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+
+}
+.social-icon {
+  margin: 20px 10px;
 }
